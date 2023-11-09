@@ -1,7 +1,13 @@
 <template>
-  <HeaderApp />
-  <MainContApp />
-  <FooterApp />
+  <div class="header">
+    <HeaderApp />
+  </div>
+  <div class="main">
+    <MainContApp />
+  </div>
+  <div class="footer">
+    <FooterApp />
+  </div>
 </template>
 
 <script>

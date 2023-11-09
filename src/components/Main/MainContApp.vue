@@ -1,5 +1,14 @@
 <template>
-  <main>ecco il main</main>
+  <main class="p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          Qui vanno i contenuti del main
+
+        </div>
+      </div>
+    </div>
+  </main>
 </template>
 
 <script>
@@ -8,4 +17,9 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+main {
+  color: white;
+  background-color: black;
+}
+</style>
