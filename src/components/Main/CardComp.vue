@@ -1,9 +1,11 @@
 <template>
-    <div>
-        <img :src="imgCh" :alt="titleCh">
-    </div>
-    <div>
-        <h5 class="card-title">{{ titleCh }}</h5>
+    <div class="my-2">
+        <div class="mycard-c">
+            <img :src="imgCh" :alt="titleCh">
+        </div>
+        <div class="my-2">
+            <h6 class="card-title">{{ titleCh }}</h6>
+        </div>
     </div>
 </template>
 
@@ -17,4 +19,17 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.mycard-c {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+</style>
