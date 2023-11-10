@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-4">
-          <CardComp v-for="(item, index) in DcComics" :imgCh="item.thumb" :titleCh="item.series" />
+          <CardComp v-for="(comic, index) in comics" :imgCh="comic.thumb" :titleCh="comic.series" />
         </div>
       </div>
     </div>
@@ -17,6 +17,11 @@ export default {
   name: "MainContApp",
   components: {
     CardComp,
+  },
+  data() {
+    return {
+      comics: DcComics
+    }
   }
 
 };
