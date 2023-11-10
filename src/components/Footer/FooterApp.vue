@@ -4,10 +4,10 @@
     <div class="top">
       <div class="container text-center">
         <div class="row justify-content-between pt-5 pb-5">
-          <div class="col-12 col-md-2 d-flex align-items-center justify-content-center felx-nowrap"
+          <div class="col-12 col-md-2 d-flex align-items-center justify-content-center felx-nowrap "
             v-for="(el, index) in  footerOpt " :key="index">
-            <div>
-              <img :src="`/buy-comics-${el.nameImg}`" :alt="el.optTitle">
+            <div class="mydiv">
+              <img :src="`/buy-${el.nameImg}`" :alt="el.optTitle">
             </div>
             <div class="mx-3 ">
               {{ el.optTitle.toUpperCase() }}
@@ -97,24 +97,24 @@ export default {
       footerOpt: [
         {
           optTitle: 'digital comics',
-          nameImg: 'digital-comics.png'
+          nameImg: 'comics-digital-comics.png'
         },
         {
           optTitle: 'dc merchandise',
-          nameImg: 'merchandise.png'
+          nameImg: 'comics-merchandise.png'
         },
         {
           optTitle: 'subscription',
-          nameImg: 'subscriptions.png'
+          nameImg: 'comics-subscriptions.png'
         },
         {
           optTitle: 'dcomic shop locator',
-          nameImg: 'shop-locator.png'
+          nameImg: 'comics-shop-locator.png'
         },
-        // {
-        //   optTitle: 'dc power visa',
-        //   nameImg: 'dc-power-visa.svg'
-        // },non mi legge l'immagine svg chiedere il perche
+        {
+          optTitle: 'dc power visa',
+          nameImg: 'dc-power-visa.svg'
+        }
       ]
     }
   }
@@ -132,7 +132,7 @@ ul {
 }
 
 img {
-  width: 50px;
+  width: 100%;
 }
 
 .top {
@@ -143,6 +143,10 @@ img {
     font-size: 0.8rem;
     white-space: nowrap;
   }
+}
+
+.mydiv {
+  width: 50px;
 }
 
 .center {
