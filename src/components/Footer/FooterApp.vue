@@ -19,6 +19,9 @@
     </div>
     <!-- center -->
     <div class="center pt-4">
+      <div class="mylogo-c">
+        <img src="../../assets/immagini/dc-logo-bg.png" alt="logo" class="mylogo">
+      </div>
       <div class="container">
         <div class="row justify-content-between">
           <div class="col-12 col-md-6">
@@ -69,9 +72,6 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-md-6 text-center ">
-            <img src="../../assets/immagini/dc-logo-bg.png" alt="">
           </div>
         </div>
       </div>
@@ -138,6 +138,7 @@ img {
 .top {
   background-color: rgb(56, 128, 241);
   color: white;
+  z-index: 100;
 
   div {
     font-size: 0.8rem;
@@ -152,14 +153,29 @@ img {
 .center {
   background-image: url('../../assets/immagini/footer-bg.jpg');
   color: white;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 
-  img {
-    width: 100%;
-    z-index: -1;
-  }
+.mylogo-c {
+  position: relative;
+
+}
+
+.mylogo {
+  width: 500px;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -100px;
+  right: 100px;
 }
 
 .bottom {
   background-color: rgb(48, 48, 48);
+  z-index: 100;
 }
 </style>
