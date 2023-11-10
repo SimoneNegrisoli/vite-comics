@@ -2,8 +2,8 @@
   <main class="p-5">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-4">
-          <CardComp v-for="(comic, index) in comics" :imgCh="comic.thumb" :titleCh="comic.series" />
+        <div class="col-12 col-md-2 comics-container" v-for="(comic, index) in comics">
+          <CardComp :imgCh="comic.thumb" :titleCh="comic.series" />
         </div>
       </div>
     </div>
@@ -31,5 +31,16 @@ export default {
 main {
   color: white;
   background-color: black;
+}
+
+.comics-container {
+  div {
+    width: 80px;
+
+    img {
+      width: 100%;
+    }
+  }
+
 }
 </style>

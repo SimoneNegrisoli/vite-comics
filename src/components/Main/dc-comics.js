@@ -82,6 +82,4 @@ const DcComics = [
     type: "graphic novel",
   },
 ];
-export default {
-  name: "DcComics",
-};
+export default DcComics;

@@ -1,6 +1,8 @@
 <template>
-    <div class="card">
-        <img :src="imgCh" class="card-img-top" :alt="titleCh">
+    <div>
+        <img :src="imgCh" :alt="titleCh">
+    </div>
+    <div>
         <h5 class="card-title">{{ titleCh }}</h5>
     </div>
 </template>
