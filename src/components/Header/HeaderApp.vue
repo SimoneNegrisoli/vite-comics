@@ -9,7 +9,8 @@
                 </div>
                 <ul class="nav nav-underline col-12 col-md-8">
                     <li class="nav-item" v-for="(link, index) in menu">
-                        <a class="nav-link" aria-current="page" :href="link.url" :class="{ active: link.current }">
+                        <a class="nav-link" :href="link.url" :class="{ 'active': link.current }"
+                            @click="handleClick(index)">
                             {{ link.text.toUpperCase() }}
                         </a>
                     </li>
@@ -51,7 +52,7 @@ export default {
                 {
                     text: "Games",
                     url: "#",
-                    current: true,
+                    current: false,
                 },
                 {
                     text: "Collectibles",
@@ -81,6 +82,12 @@ export default {
             ],
         };
     },
+    methods: {
+        handleClick(index) {
+            this.menu[index].current = !this.menu[index].current;
+            this.menu[index].current = false
+        },
+    }
 };
 </script>
 

@@ -1,4 +1,9 @@
 <template>
+  <div class="jumbotron">
+    <div class="container">
+      <button type="button" class="btn btn-primary fw-bold ">CURRENT SERIES</button>
+    </div>
+  </div>
   <main class="p-5">
     <div class="container">
       <div class="row">
@@ -31,5 +36,22 @@ export default {
 main {
   color: white;
   background-color: black;
+}
+
+.jumbotron {
+  width: 100%;
+  height: 400px;
+  background-image: url("../../assets/immagini/jumbotron.jpg");
+
+  button {
+    position: relative;
+    top: 370px;
+    right: 0;
+    font-size: 1.4rem;
+
+    :hover {
+      font-size: 1.5rem;
+    }
+  }
 }
 </style>
