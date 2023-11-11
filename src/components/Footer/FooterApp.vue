@@ -7,7 +7,7 @@
           <div class="col-12 col-md-2 d-flex align-items-center justify-content-center felx-nowrap "
             v-for="(el, index) in  footerOpt " :key="index">
             <div class="mydiv">
-              <img :src="`/buy-${el.nameImg}`" :alt="el.optTitle">
+              <img :src="`/buy-${el.nameImg}`" :alt="el.optTitle" class="mytop-img">
             </div>
             <div class="mx-3 ">
               {{ el.optTitle.toUpperCase() }}
@@ -77,10 +77,32 @@
       </div>
     </div>
     <!-- bottom -->
-    <div class="bottom">
+    <div class="bottom pt-4 pb-4">
       <div class="container">
-        <div class="row">
-          <div class="col-12">ciao</div>
+        <div class="row justify-content-between align-items-center">
+          <div class="col-12 col-md-4">
+            <button class="btn btn-outline-primary ">SIGN-UP NOW</button>
+          </div>
+          <div class="col-12 col-md-8 d-flex align-items-center align-content-center  justify-content-end ">
+
+            <h5 class="mx-3"><strong>FOLLOW US</strong></h5>
+            <div>
+              <img src="../../assets/immagini/footer-facebook.png" alt="face">
+            </div>
+            <div class="mx-3">
+              <img src="../../assets/immagini/footer-twitter.png" alt="twitter">
+            </div>
+            <div>
+              <img src="../../assets/immagini/footer-youtube.png" alt="youtube">
+            </div>
+            <div class="mx-3">
+              <img src="../../assets/immagini/footer-periscope.png" alt="periscope">
+            </div>
+            <div>
+              <img src="../../assets/immagini/footer-pinterest.png" alt="pinterest">
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
@@ -146,8 +168,10 @@ img {
   }
 }
 
-.mydiv {
-  width: 50px;
+
+.mytop-img {
+  height: 40px;
+  width: auto;
 }
 
 .center {
@@ -177,5 +201,18 @@ img {
 .bottom {
   background-color: rgb(48, 48, 48);
   z-index: 100;
+
+  button {
+    color: white;
+  }
+
+  img {
+    width: 30px;
+  }
+
+  h5 {
+    color: rgb(56, 123, 234);
+    margin-bottom: 0;
+  }
 }
 </style>
